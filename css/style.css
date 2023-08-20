@@ -377,12 +377,10 @@ input[type="text"]::placeholder {
   position: fixed;
   border-left: hidden;
   width: 64%;
-  left: 31%;
   height: 571px;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom right, #484a52 0%, #a7783f 100%);
-
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
