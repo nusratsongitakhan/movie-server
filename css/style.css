@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Inter', serif;*/
+}
+/*Css start for Smooth transition from one frame to other in respnsiveness*/
+* {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/*Css end for Smooth transition from one frame to other in respnsiveness*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+  background-color: #171752;
+} 
+#containerBackgroudImageSection{
+  width: 100%;
+  height: 650px; 
+  background-image: url("../images/homePageBackgroundPicture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 140%;
+  clip-path: polygon(-425% 0%, 168% 0%, 809% 00%, 100% 100%);
+}
+.small_common_margin {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.big_common_margin {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #06070b;
+}
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #414141;
+  margin: 32% 0 12% 0;
+}
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 72px;
+  color: #414141;
+}
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 72px;
+  color: #414141;
+}
+h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 72px;
+  color: #414141;
+}
+h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #414141;
+}
+
+header {
+  height: auto;
+}
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 2%;
+}
+/* .page_logo {
+  width: 19%;
+  opacity: 0.5;
+} */
+.logo_text{
+  color: #f16623;
+  font-size: 30px;
+}
+nav {
+  flex: 1;
+  text-align: right; 
+}
+nav ul{
+  margin-right: 5%;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1%;
+}
+nav ul li button {
+  color: #f16623;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+}
+nav ul li button:hover {
+  color: #ffffff;
+}
+.trollerIcon{
+  padding-left: 72%;
+}
+.rightNavber_icon {
+  margin-left: 2%;
+  width: 6%;
+}
+.floatingNavbar {
+  background: linear-gradient(to right, #06070b, #525050);
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+  width: 50%;
+  height: 63px;
+  margin: 0px 0px 0px 374px;
+  left: 497px;
+  border-radius: 79px;
+  z-index: 100; /* Ensure the navbar is above other elements */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
+.floatingNavbarList{
+  width: 128%;
+  margin-left: 26%;
+
+}
+.floatingNavbarList button{
+  color:#0c0fec;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  background-color:transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 9%;
+}
+.searchField{
+  display: none;
+}
+.searchField.active {
+  display: block;
+}
+.searchField input{
+  width: 643px;
+  height: 63px;
+  border-radius: 38px;
+  border: none;
+  background: #090b94
+}
+input[type="text"]::placeholder {
+  color: #f16623;
+  
+}
+.searchIcon{
+  margin-left: 65%;
+  width: 37%;
+  display: flex; /* Add this to enable flex layout */
+  align-items: center;
+}
+.crossIcon{
+  display: none;
+}
+.crossIcon.active{
+  margin-left: auto;
+  width: 39%;
+  align-items: center;
+  display: flex;
+  margin-right: 27%;
+}
+
+.description_text {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 6%;
+}
+.description_text_square_badge{
+  width: 56px;
+  height: 15px;
+  padding: 5px;
+  background-color: #414141;
+  color: #ffffff;
+  border-radius: 5px;
+  line-height: normal;
+  font-size: smaller;
+  margin-bottom: 1%;
+}
+
+.price_badge{
+  
+}
+.description_text h1{
+  color:#0c0fec;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 53px;
+  margin:0;
+}
+.pcChiledComponent{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  justify-content: center;
+  align-items: center;
+}
+.pcChiledComponentContainer{
+  position: fixed;
+  border-left: hidden;
+  width: 64%;
+  left: 31%;
+  height: 571px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #484a52 0%, #a7783f 100%);
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: flex;
+}
+
+/* #products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productBox {
+  width: 22%;
+  height: 4%;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+  padding: 3%;
+  border-radius: 33px;
+  margin-top: 3%;
+}
+
+.productBox h5 {
+  text-align: center;
+}
+
+.productBox img {
+  width: 100%;
+  height: auto;
+  margin-top: 7%;
+}
+
+.productBox h3 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.productBox a {
+  text-decoration: none;
+  padding: 5% 10%;
+  border: 3px solid #f16623;
+  color: #06070b;
+  font-weight: 700;
+  border-radius: 32px;
+  margin-left: 3%;
+}
+
+.productBox a:hover {
+  background-color: #f16623;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
