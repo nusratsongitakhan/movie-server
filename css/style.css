@@ -150,12 +150,13 @@ html {
 
 .container {
   width: 1440px;
+  height: 900px; 
   margin: auto;
   background-color: #171752;
 } 
 #containerBackgroudImageSection{
   width: 100%;
-  height: 650px; 
+  height: 695px; 
   background-image: url("../images/homePageBackgroundPicture.jpg");
   background-repeat: no-repeat;
   background-size: 100% 140%;
@@ -263,7 +264,7 @@ nav ul li button:hover {
   margin: 0px 0px 0px 374px;
   left: 497px;
   border-radius: 79px;
-  z-index: 100; /* Ensure the navbar is above other elements */
+  z-index: 100; 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -305,7 +306,7 @@ input[type="text"]::placeholder {
 .searchIcon{
   margin-left: 65%;
   width: 37%;
-  display: flex; /* Add this to enable flex layout */
+  display: flex; 
   align-items: center;
 }
 .crossIcon{
@@ -335,16 +336,31 @@ input[type="text"]::placeholder {
   font-size: smaller;
   margin-bottom: 1%;
 }
-
+.price{
+  display: flex;
+  flex-direction: row;
+}
 .price_badge{
-  
+    background-color: #f16623;
+    margin-right: 2%;
+    width: 40px;
+    height: 28px;
+    padding: 0px;
+    font-size: smaller;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+.price h3{
+  font-size: 33px;
+  line-height: 1;
+  color: #0c0fec;
 }
 .description_text h1{
   color:#0c0fec;
   font-weight: 600;
   font-size: 51px;
   line-height: 53px;
-  margin:0;
+  margin: 10px 0px
 }
 .pcChiledComponent{
   display: flex;
